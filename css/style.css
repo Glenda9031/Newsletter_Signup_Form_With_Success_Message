@@ -72,11 +72,93 @@ body {
     flex-direction: column;
 }
 
+.form-item label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.form-item label .invalid-email {
+    color: var(--tomato);
+    display: none;
+}
 
+.form-item label .invalid-email.active {
+    display: block;
+}
 
+.form-item input,
+.form-item button {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
 
+.form-item input {
+    border: 0.0625rem solid var(--grey);
+}
 
+.form-item input.active {
+    background-color: rgba(255, 98, 92, 0.2);
+    border: 0.0625rem solid var(--tomato);
+}
+
+.form-item button {
+    cursor: pointer;
+    background: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+.form-item button:hover {
+    background: linear-gradient(127deg, rgba(255, 63, 124, 1) 40%, rgba(255, 154, 34, 1) 70%);
+}
+
+.right {
+    text-align: right;
+}
+
+.confirmed-message {
+    display: none;
+    line-height: 1.2;
+}
+
+.confirmed-message.active {
+    display: block;
+}
+
+.confirmed-message img {
+    width: 5rem;
+}
+
+.confirmed-message h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.confirmed-message p {
+    margin: 2rem 0;
+}
+
+.confirmed-message button {
+    cursor: pointer;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+.confirmed-message button:hover {
+    
+}
 
 
 
