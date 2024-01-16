@@ -157,7 +157,55 @@ body {
 }
 
 .confirmed-message button:hover {
-    
+    background: linear-gradient(127deg, rgba(255, 63, 124, 1) 40%, rgba(255, 154, 34, 1) 70%);
+}
+
+#user-email {
+    font-weight: 700;
+}
+
+@media (max-width: 48rem) {
+    body {
+        display: initial;
+        line-height: 1.4;
+    }
+
+    .container {
+        width: 100%;
+        height: initial;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .container .success {
+        display: block;
+        padding: initial;
+    }
+
+    .left {
+        padding: 1rem 2rem;
+        grid-row: 2;
+    }
+
+    .left-info ul li {
+        margin-bottom: 1rem;
+    }
+
+    .right img {
+        width: 100%;
+    }
+
+    .confirmed-message.active {
+        height: 100vh;
+        padding: 14rem 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .confirmed-message button {
+        margin-top: 1rem;
+    }
 }
 
 
